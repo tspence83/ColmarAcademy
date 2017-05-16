@@ -1,0 +1,56 @@
+html{
+  font-size: 18px;
+}
+
+nav{
+  display: flex;
+  height: 64px;
+  width: 100%;
+  padding-top: 1rem;
+  postion: fixed;
+  background-color: #0025cc;
+}
+
+nav img{
+  padding-left: 24px;
+  width: 100px;
+}
+
+p{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex-grow: 2;
+}
+
+mark.red{
+  color:#ff0000;
+  background: none;
+}
+
+mark.gray{
+  color:#939996;
+  background: none;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  /*justify-content: center;*/
+}
+
+nav li{
+  padding-right: 16px;
+  font-weight: bold;
+}
+
+li a:link{
+  color: black;
+}
+
+li a:hover{
+  color:#ff0000;
+}
