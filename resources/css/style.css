@@ -1,5 +1,6 @@
 html{
   font-size: 18px;
+
 }
 
 nav{
@@ -53,4 +54,61 @@ li a:link{
 
 li a:hover{
   color:#ff0000;
+}
+
+.maincontainer{
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  min-width: 150px;
+  background-color: #939996;
+
+  /*padding-bottom: 32px;*/
+}
+
+.banner img{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 40px;
+  height: auto;
+  width: 60%;
+}
+
+.bannertext{
+  display: flex;
+  flex-flow: column;
+  width: 25.5rem;
+  margin-left: 1.25rem;
+  justify-content: center;
+  /*align-items: center;
+  justify-content: flex-end;*/
+}
+
+.bannertext h1{
+  font-weight: bold;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.bannertext h3{
+  font-family: sans-serif;
+  margin-top: 32px;
+  margin-right: 40px;
+  font-size: 20px;
+  line-height: 1.5rem;
+  font-style: italic;
+}
+
+.bannertext a{
+  margin-top: 32px;
+  background-color: #ff0000;
+  border: none;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  width: 75%;
 }
