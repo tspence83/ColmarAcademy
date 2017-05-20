@@ -8,7 +8,7 @@ nav{
   height: 64px;
   width: 100%;
   padding-top: 1rem;
-  postion: fixed;
+  position: fixed;
   background-color: #0025cc;
 }
 
@@ -17,7 +17,7 @@ nav img{
   width: 100px;
 }
 
-p{
+nav p{
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -58,8 +58,7 @@ li a:hover{
 
 .maincontainer{
   display: flex;
-  height: auto;
-  max-width: 100%;
+  height: 600px;
   min-width: 150px;
   background-color: #939996;
 
@@ -67,12 +66,12 @@ li a:hover{
 }
 
 .banner img{
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 24px;
-  margin-right: 40px;
-  height: auto;
+  margin: 32px 40px 32px 24px;
   width: 60%;
+  padding-top: 72px;
+  max-height: 100%;
+  margin-right: 32px;
+  border-right: 5px solid blue; /*troubleshoot*/
 }
 
 .bannertext{
@@ -81,6 +80,7 @@ li a:hover{
   width: 25.5rem;
   margin-left: 1.25rem;
   justify-content: center;
+  border-left: 5px solid green; /*troubleshoot*/
   /*align-items: center;
   justify-content: flex-end;*/
 }
@@ -106,9 +106,179 @@ li a:hover{
   border: none;
   padding: 8px 8px;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   display: inline-block;
   font-size: 16px;
   color: black;
   width: 75%;
+  font-family: sans-serif;
+  font-weight: 600;
 }
+
+.information-main {
+  display: flex;
+  background-color: #D3D3D3;
+  padding-bottom: 30px;
+}
+
+.information-image{
+  display: block;
+  border: 5px solid red; /*use for troubleshooting width*/
+  width: 60%;
+}
+
+.information-image img{
+  margin: 32px 24px;
+  max-width: 60%;
+}
+
+.information-image h1{
+  margin-left: 24px;
+  margin-bottom: 24px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.information-image p{
+  font-family: sans-serif;
+  max-width: 60%;
+  line-height: 1.5rem;
+  margin-left: 24px;
+  margin-bottom: 12px;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.information-image span{
+  margin-left: 24px;
+}
+
+.information-data{
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+  height: auto;
+  margin-top: 32px;
+  border: 5px solid black; /*troubleshoot*/
+}
+
+/*Information Box 1*/
+.information-data .box1{
+  display: flex;
+  justify-content: center;
+  border: 5px solid yellow;
+  height: 33%;
+}
+
+.information-data .box1 img{
+  width: 35%;
+  margin: 16px;
+}
+
+.box1 .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.box1 h1{
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.box1 h3{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: lighter;
+  padding-bottom: 8px;
+}
+
+.box1 a{
+  padding-top: 24px;
+}
+
+/*Information Box 2*/
+.information-data .box2{
+  display: flex;
+  justify-content: center;
+  border: 5px solid yellow;
+  height: 33%;
+}
+
+.information-data .box2 img{
+  width: 35%;
+  margin: 16px;
+}
+
+.box2 .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.box2 h1{
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.box2 h3{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: lighter;
+  padding-bottom: 8px;
+}
+
+.box2 a{
+  padding-top: 24px;
+}
+
+/*Information Block 3
+.information-data .box3{
+  display: flex;
+  justify-content: center;
+  border: 5px solid yellow;
+}
+
+.information-data .box3 img{
+  width: 35%;
+  margin: 8px;
+}
+
+.box3 .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.box3 h1{
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.box3 h3{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.box3 a{
+  padding-top: 24px;
+}*/
