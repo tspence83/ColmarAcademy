@@ -67,20 +67,20 @@ li a:hover{
 
 .banner img{
   margin: 32px 40px 32px 24px;
-  width: 60%;
+  width: 75%;
   padding-top: 72px;
   max-height: 100%;
   margin-right: 32px;
-  border-right: 5px solid blue; /*troubleshoot*/
+  /*border-right: 5px solid blue; troubleshoot*/
 }
 
 .bannertext{
   display: flex;
   flex-flow: column;
-  width: 25.5rem;
+  width: 50%;
   margin-left: 1.25rem;
   justify-content: center;
-  border-left: 5px solid green; /*troubleshoot*/
+  /*border-left: 5px solid green; troubleshoot*/
   /*align-items: center;
   justify-content: flex-end;*/
 }
@@ -123,13 +123,17 @@ li a:hover{
 
 .information-image{
   display: block;
-  border: 5px solid red; /*use for troubleshooting width*/
-  width: 60%;
+  /*border: 5px solid red; use for troubleshooting width*/
+  /*width: 60%;*/
 }
 
 .information-image img{
   margin: 32px 24px;
-  max-width: 60%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .information-image h1{
@@ -157,17 +161,18 @@ li a:hover{
 .information-data{
   display: flex;
   flex-direction: column;
-  width: 423px;
+  width: 40%;
   height: auto;
   margin-top: 32px;
-  border: 5px solid black; /*troubleshoot*/
+  /*border: 5px solid black; troubleshoot*/
 }
 
 /*Information Box 1*/
 .information-data .box1{
   display: flex;
   justify-content: center;
-  border: 5px solid yellow;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
   height: 33%;
 }
 
@@ -208,8 +213,9 @@ li a:hover{
 .information-data .box2{
   display: flex;
   justify-content: center;
-  border: 5px solid yellow;
   height: 33%;
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
 }
 
 .information-data .box2 img{
@@ -245,40 +251,55 @@ li a:hover{
   padding-top: 24px;
 }
 
-/*Information Block 3
+/*Information Block 3*/
 .information-data .box3{
-  display: flex;
-  justify-content: center;
-  border: 5px solid yellow;
+  background-image: url("../images/information-guest-lecture.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  border-left: 3px solid black;
 }
 
-.information-data .box3 img{
-  width: 35%;
-  margin: 8px;
+.information-data .box3{
+  display: flex;
+  justify-content:;
+  /*border: 5px solid red;*/
+  height: 34%;
 }
+
+/*.information-data .box3 img{
+  position: absolute;
+  width: 12%;
+  margin: 16px;
+}*/
 
 .box3 .text{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   line-height: 1.2;
 }
 
 .box3 h1{
-  display: flex;
-  flex-direction: column;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 26px;
+  /*text-align: right;*/
 }
 
 .box3 h3{
   display: flex;
   flex-direction: column;
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: bold;
+  text-align: center;
 }
 
 .box3 a{
   padding-top: 24px;
-}*/
+}
