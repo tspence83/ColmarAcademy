@@ -10,6 +10,7 @@ nav{
   padding-top: 1rem;
   position: fixed;
   background-color: #0025cc;
+  z-index: 2;
 }
 
 nav img{
@@ -119,6 +120,9 @@ li a:hover{
   display: flex;
   background-color: #D3D3D3;
   padding-bottom: 30px;
+  display: flex;
+  /*height: 630px;/*
+  width: 100%;
 }
 
 .information-image{
@@ -156,6 +160,8 @@ li a:hover{
 
 .information-image span{
   margin-left: 24px;
+  padding-top: 24px;
+  font-family: sans-serif;
 }
 
 .information-data{
@@ -174,6 +180,7 @@ li a:hover{
   border-left: 3px solid black;
   border-bottom: 3px solid black;
   height: 33%;
+  width: 100%;
 }
 
 .information-data .box1 img{
@@ -216,6 +223,7 @@ li a:hover{
   height: 33%;
   border-bottom: 3px solid black;
   border-left: 3px solid black;
+  width: 100%;
 }
 
 .information-data .box2 img{
@@ -259,20 +267,11 @@ li a:hover{
   background-size: cover;
   opacity: 0.9;
   border-left: 3px solid black;
-}
-
-.information-data .box3{
   display: flex;
-  justify-content:;
-  /*border: 5px solid red;*/
   height: 34%;
+  justify-content: center;
+  width: 100%;
 }
-
-/*.information-data .box3 img{
-  position: absolute;
-  width: 12%;
-  margin: 16px;
-}*/
 
 .box3 .text{
   display: flex;
@@ -302,4 +301,65 @@ li a:hover{
 
 .box3 a{
   padding-top: 24px;
+}
+/*Learning Courses Section*/
+
+.learning {
+  height: 600px;
+  width: auto;
+  background-color: #939996;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.learning h1{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+
+.course{
+  display: flex;
+}
+
+.course-text img{
+  height: 188px;
+}
+
+.course-text{
+  /*background-color: #0025cc;*/
+  height: 200px;
+  width: 352px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.course-text h2{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.course-text h3{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.course-text p{
+  font-size: 20px;
+  font-family: arial;
+  line-height: 1.3;
 }
