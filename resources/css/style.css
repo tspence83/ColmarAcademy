@@ -122,14 +122,14 @@ li a:hover{
   padding-bottom: 30px;
   display: flex;
   /*height: 630px;/*
-  width: 100%;
+  width: 100%;*/
 }
 
-.information-image{
+/*.information-image{
   display: block;
   /*border: 5px solid red; use for troubleshooting width*/
-  /*width: 60%;*/
-}
+  /*width: 60%;
+}*/
 
 .information-image img{
   margin: 32px 24px;
@@ -305,13 +305,14 @@ li a:hover{
 /*Learning Courses Section*/
 
 .learning {
-  height: 600px;
+  height: auto;
   width: auto;
   background-color: #939996;
   display: flex;
   flex-direction: column;
   padding-left: 32px;
   padding-right: 32px;
+  /*border: 3px solid blue;*/
 }
 
 .learning h1{
@@ -327,38 +328,44 @@ li a:hover{
 
 .course{
   display: flex;
+  width: auto; /*was 352 width*/
+  height: auto;/*was 360*/
+  background-color: #939996;
+  justify-content: space-around;/*added*/
+  /*border: 3px solid red;*/
+  flex-wrap: wrap;/*to wrap courses*/
 }
 
-.course-text img{
-  height: 188px;
-}
-
-.course-text{
-  /*background-color: #0025cc;*/
-  height: 200px;
-  width: 352px;
-  padding-left: 16px;
+.course-info{
   display: flex;
   flex-direction: column;
+  width: 30%;
+  /*border: 3px solid green;*/
+  background-color: #0025cc;
+  margin-bottom: 20px;
 }
 
-
-.course-text h2{
-  padding-top: 16px;
-  padding-bottom: 16px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 26px;
+.course-info img{
+  height: 200px;
+  width: 100%;
 }
 
-.course-text h3{
+.course-info h2{
+ padding-top: 16px;
+ padding-bottom: 16px;
+ font-family: sans-serif;
+ font-weight: bold;
+ font-size: 26px;
+}
+
+.course-info h3{
   margin-top: 8px;
   margin-bottom: 8px;
   font-size: 20px;
   font-family: arial;
 }
 
-.course-text p{
+.course-info p{
   font-size: 20px;
   font-family: arial;
   line-height: 1.3;
